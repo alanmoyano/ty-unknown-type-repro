@@ -1,0 +1,9 @@
+Version: 1.103.2 (Universal)
+Commit: 6f17636121051a53c88d3e605c491d22af2ba755
+Date: 2025-08-20T16:45:34.255Z
+Electron: 37.2.3
+ElectronBuildId: 12035395
+Chromium: 138.0.7204.100
+Node.js: 22.17.0
+V8: 13.8.500258-electron.0
+OS: Darwin arm64 24.6.0

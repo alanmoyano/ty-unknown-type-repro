@@ -1,0 +1,45 @@
+2025-08-29 13:02:15.476599000 DEBUG main ty_server::server: Initialization options: InitializationOptions { log_level: Some(Trace), log_file: None, options: ClientOptions { global: GlobalOptions { diagnostic_mode: None, experimental: None }, workspace: WorkspaceOptions { disable_language_services: None, inlay_hints: None, python_extension: None }, unknown: {} } }
+2025-08-29 13:02:15.476692000  INFO main ty_server::server: Version: 0.0.1-alpha.19 (e9cb838b3 2025-08-19)
+2025-08-29 13:02:15.511253000 DEBUG ty:main ty_server::server::main_loop: Requesting workspace configuration for workspaces
+2025-08-29 13:02:15.522660000 DEBUG ty:main ty_server::session: Deferring `textDocument/didOpen` notification until all workspaces are initialized
+2025-08-29 13:02:15.523203000 DEBUG ty:main ty_server::session: Deferring `$/setTrace` notification until all workspaces are initialized
+2025-08-29 13:02:15.523225000 DEBUG ty:main ty_server::session: Deferring `textDocument/inlayHint` request until all workspaces are initialized
+2025-08-29 13:02:15.527376000 DEBUG ty:main ty_server::session: Deferring `$/setTrace` notification until all workspaces are initialized
+2025-08-29 13:02:15.529130000 DEBUG ty:main ty_server::session: Deferring `$/setTrace` notification until all workspaces are initialized
+2025-08-29 13:02:15.530394000 DEBUG ty:main client_response{id=0 method="workspace/configuration"}: ty_server::server::main_loop: Received workspace configurations, initializing workspaces
+2025-08-29 13:02:15.530499000 DEBUG ty:main ty_server::session: Initializing workspace `file:///Users/alan/DAO/proyecto-1`
+2025-08-29 13:02:15.530524000 DEBUG ty:main ty_server::session::options: Using the Python environment selected in the VS Code Python extension in case the configuration doesn't specify a Python environment: /Users/alan/DAO/proyecto-1/.venv
+2025-08-29 13:02:15.530528000 DEBUG ty:main ty_server::session::options: Using the Python version selected in the VS Code Python extension: 3.11 in case the configuration doesn't specify a Python version
+2025-08-29 13:02:15.530551000 DEBUG ty:main ty_project::metadata: Searching for a project in '/Users/alan/DAO/proyecto-1'
+2025-08-29 13:02:15.530815000 DEBUG ty:main ty_project::metadata::pyproject: Resolving requires-python constraint: `>=3.11`
+2025-08-29 13:02:15.530835000 DEBUG ty:main ty_project::metadata::pyproject: Resolved requires-python constraint to: 3.11
+2025-08-29 13:02:15.530890000 DEBUG ty:main ty_project::metadata: Project without `tool.ty` section: '/Users/alan/DAO/proyecto-1'
+2025-08-29 13:02:15.530913000 DEBUG ty:main ty_project::metadata::configuration_file: Searching for a user-level configuration at `/Users/alan/.config/ty/ty.toml`
+2025-08-29 13:02:15.532340000  INFO ty:main ty_project::metadata::options: Defaulting to python-platform `darwin`
+2025-08-29 13:02:15.532470000 DEBUG ty:main ty_python_semantic::site_packages: Attempting to parse virtual environment metadata at '/Users/alan/DAO/proyecto-1/.venv/pyvenv.cfg'
+2025-08-29 13:02:15.532568000 DEBUG ty:main ty_python_semantic::site_packages: Searching for site-packages directory in sys.prefix /Users/alan/DAO/proyecto-1/.venv
+2025-08-29 13:02:15.532619000 DEBUG ty:main ty_python_semantic::site_packages: Resolved site-packages directories for this virtual environment are: SitePackagesPaths({"/Users/alan/DAO/proyecto-1/.venv/lib/python3.11/site-packages"})
+2025-08-29 13:02:15.532690000 DEBUG ty:main ty_python_semantic::site_packages: Searching for real stdlib directory in sys.prefix /Users/alan/.local/share/uv/python/cpython-3.11.12-macos-aarch64-none
+2025-08-29 13:02:15.532696000 DEBUG ty:main ty_python_semantic::site_packages: Resolved real stdlib path for this virtual environment is: /Users/alan/.local/share/uv/python/cpython-3.11.12-macos-aarch64-none/lib/python3.11
+2025-08-29 13:02:15.532701000 DEBUG ty:main ty_project::metadata::options: Including `.` in `environment.root`
+2025-08-29 13:02:15.532710000 DEBUG ty:main ty_python_semantic::module_resolver::resolver: Adding first-party search path `/Users/alan/DAO/proyecto-1`
+2025-08-29 13:02:15.532714000 DEBUG ty:main ty_python_semantic::module_resolver::resolver: Using vendored stdlib
+2025-08-29 13:02:15.532982000 DEBUG ty:main ty_python_semantic::module_resolver::resolver: Adding site-packages search path `/Users/alan/DAO/proyecto-1/.venv/lib/python3.11/site-packages`
+2025-08-29 13:02:15.533005000  INFO ty:main ty_project::metadata::options: Python version: Python 3.11, platform: darwin
+2025-08-29 13:02:15.533571000 DEBUG ty:main ty_server::session: Registering diagnostic capability with OpenFilesOnly diagnostic mode
+2025-08-29 13:02:15.533587000 DEBUG ty:main ty_server::session: Rename capability is disabled in the resolved global settings
+2025-08-29 13:02:15.533603000 DEBUG ty:main ty_server::server::main_loop: Processing deferred notification `textDocument/didOpen`
+2025-08-29 13:02:15.534909000 DEBUG ThreadId(21) ty_project::walk: Skipping directory '/Users/alan/DAO/proyecto-1/.git' because it is excluded by a default or `src.exclude` pattern
+2025-08-29 13:02:15.538208000 DEBUG ty:main notification{method="textDocument/didOpen"}:apply_changes: ty_project: Adding file `/Users/alan/DAO/proyecto-1/main.py` to project `proyecto-1`
+2025-08-29 13:02:15.538243000 DEBUG ty:main notification{method="textDocument/didOpen"}: ty_project: Opening file `/Users/alan/DAO/proyecto-1/main.py`
+2025-08-29 13:02:15.538247000 DEBUG ty:main notification{method="textDocument/didOpen"}: ty_project: Take open project files
+2025-08-29 13:02:15.538270000 DEBUG ty:main notification{method="textDocument/didOpen"}:set_open_files{open_files={file(Id(c00))}}: ty_project: Set open project files (count: 1)
+2025-08-29 13:02:15.538289000 DEBUG ty:main ty_server::server::main_loop: Processing deferred notification `$/setTrace`
+2025-08-29 13:02:15.538295000 DEBUG ty:main ty_server::server::main_loop: Processing deferred request `textDocument/inlayHint`
+2025-08-29 13:02:15.538328000 DEBUG ty:main ty_server::server::main_loop: Processing deferred notification `$/setTrace`
+2025-08-29 13:02:15.538333000 DEBUG ty:main ty_server::server::main_loop: Processing deferred notification `$/setTrace`
+2025-08-29 13:02:15.538343000  INFO ty:main client_response{id=1 method="client/registerCapability"}: ty_server::server::main_loop: File watcher registration completed successfully
+2025-08-29 13:02:15.539339000 DEBUG ty:main client_response{id=2 method="client/registerCapability"}: ty_server::session: Registered dynamic capabilities
+2025-08-29 13:02:15.541077000 DEBUG ThreadId(31) ty_project::walk: Skipping directory '/Users/alan/DAO/proyecto-1/.git' because it is excluded by a default or `src.exclude` pattern
+2025-08-29 13:02:15.543143000  INFO ty:worker:1 request{id=2 method="textDocument/diagnostic"}:check_file{file=file(Id(c00))}:Project::index_files{project=proyecto-1}: ty_project: Indexed 1 file(s) in 0.003s
+2025-08-29 13:02:15.543598000 DEBUG ty:worker:1 request{id=2 method="textDocument/diagnostic"}:check_file{file=file(Id(c00))}: ty_python_semantic::types: Checking file '/Users/alan/DAO/proyecto-1/main.py'
